@@ -10,7 +10,7 @@ class main_widget(QMainWindow):
     def __init__(self):
         super().__init__()
         self.root_path="D:/miniImage"
-        print("m_ui.py:don't forget root_path %s" % self.root_path)
+        print("m_ui.py:改成你自己的root_path %s" % self.root_path)
         self.m_init()
 
     def m_init(self):
