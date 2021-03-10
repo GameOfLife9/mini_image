@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="802f3d8e-5254-4762-91bf-dff86913776b" name="Default Changelist" comment="" />
+    <list default="true" id="802f3d8e-5254-4762-91bf-dff86913776b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part2/m_blur.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/m_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/m_ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/part1/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/m_edit.py" beforeDir="false" afterPath="$PROJECT_DIR$/part1/m_edit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/m_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redrock.png" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +24,12 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1pSMQagnE6HPzsBLNB2UE2MC10B" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -118,5 +131,16 @@
       <updated>1615172022474</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

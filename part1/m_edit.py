@@ -1,21 +1,21 @@
-from PyQt5.QtWidgets import QWidget,QSlider,QLabel
-from PyQt5.QtCore import Qt
-class hsv_widegt(QWidget):
-    def __init__(self):
-        super().__init__()
-        self.m_init()
-    def m_init(self):
-        sld = QSlider(Qt.Horizontal, self)
-        sld.setFocusPolicy(Qt.NoFocus)
-        sld.setGeometry(30, 40, 100, 30)
-        sld.valueChanged[int].connect(self.changeValue)
+import cv2 as cv
+def hsv_change(instance,type):
+    image=cv.cvtColor(instance.m_image, cv.COLOR_RGB2HSV)
+    h=instance.sld_hsv_h.value()
+    row = image.shape[0]
+    col = image.shape[1]
+    for i in range(0,row-1):
+        for j in range(0,col-1):
+            image[i][j][type]=image[i][j][type]+h
+            if type==0:
+                if image[i][j][type]>179:
+                    image[i][j][type]=179
+            else:
+                if image[i][j][type]>255:
+                    image[i][j][type]=255
+            if image[i][j][type] < 0:
+                image[i][j][type] = 0
 
-        self.label = QLabel(self)
-        self.label.setGeometry(160, 40, 80, 30)
+    instance.m_image=cv.cvtColor(image, cv.COLOR_HSV2RGB)
+    instance.updata_image()
 
-        self.setGeometry(300, 300, 280, 170)
-        self.setWindowTitle('QSlider')
-        #self.show()
-
-    def changeValue(self, value):
-        s=1
