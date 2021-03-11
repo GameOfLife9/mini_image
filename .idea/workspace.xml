@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="802f3d8e-5254-4762-91bf-dff86913776b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part2/m_blur.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/image_init_update.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/m_init_file_menu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part2/m_init_process.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/m_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/m_ui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part1/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/part1/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/part1/m_edit.py" beforeDir="false" afterPath="$PROJECT_DIR$/part1/m_edit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part1/m_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/redrock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2/m_blur.py" beforeDir="false" afterPath="$PROJECT_DIR$/part2/m_blur.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +136,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
