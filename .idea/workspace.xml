@@ -2,13 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="802f3d8e-5254-4762-91bf-dff86913776b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/image_init_update.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/m_init_file_menu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part2/m_init_process.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part2/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/NST_GM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/NST_LOSS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/camp-nou.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/cat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/circle_abstract.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/claude-monet.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/content.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/content300.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/content_plus_style.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/drop-of-water.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/gram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/hidden_layers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/louvre.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/louvre_generated.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/louvre_small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/monet.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/monet_800600.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/pasargad_kashi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/persian_cat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/persian_cat_content.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/perspolis_vangogh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/reshape_loss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/result.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/sandstone.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/starrynight.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/stone_style.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/images/style300.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/m_init_style_transfer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/neural_style_transfer_core.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/nst_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/output/84.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part3/pretrained-model/imagenet-vgg-verydeep-19.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part4/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/m_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/m_ui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/part1/m_edit.py" beforeDir="false" afterPath="$PROJECT_DIR$/part1/m_edit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/m_blur.py" beforeDir="false" afterPath="$PROJECT_DIR$/part2/m_blur.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,9 +58,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1pSMQagnE6HPzsBLNB2UE2MC10B" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/untitled" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -143,5 +178,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
