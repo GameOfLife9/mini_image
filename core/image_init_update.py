@@ -8,6 +8,9 @@ def image_init(self):
     self.m_image_width = 600
     self.m_image_height = self.m_image.shape[0] / self.m_image.shape[1] * self.m_image_width
 
+    #self.m_image_width = self.m_image.shape[1]
+    #self.m_image_height = self.m_image.shape[0]
+
     self.pixmap = QPixmap(self.m_QImage)
 
     self.lbl = QLabel(self)
@@ -19,11 +22,15 @@ def image_init(self):
     self.setGeometry(300, 300, self.m_image_width + 10, self.m_image_height + 10)
 
 def image_update(self):
+    print(self.m_image.shape)
     self.m_QImage = QImage(self.m_image[:], self.m_image.shape[1], self.m_image.shape[0], self.m_image.shape[1] * 3,
                            QImage.Format_RGB888)
 
     self.m_image_width = 600
     self.m_image_height = self.m_image.shape[0] / self.m_image.shape[1] * self.m_image_width
+
+    #self.m_image_width = self.m_image.shape[1]
+    #self.m_image_height = self.m_image.shape[0]
 
     self.pixmap = QPixmap(self.m_QImage)
 

@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="802f3d8e-5254-4762-91bf-dff86913776b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/part1/hsv_change.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part4/images/test.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part4/m_init_part4_menubar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part4/segmentation_human.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part5_for_testing/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part1/ccw.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part1/cw.jfif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/image_init_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/image_init_update.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/m_init_file_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/m_init_file_menu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/m_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/m_ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part1/hsv_change.py" beforeDir="false" afterPath="$PROJECT_DIR$/part1/hsv_change.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/part1/m_edit.py" beforeDir="false" afterPath="$PROJECT_DIR$/part1/m_edit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/m_blur.py" beforeDir="false" afterPath="$PROJECT_DIR$/part2/m_blur.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part2/m_init_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/part2/m_init_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part3/m_init_style_transfer.py" beforeDir="false" afterPath="$PROJECT_DIR$/part3/m_init_style_transfer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part3/neural_style_transfer_core.py" beforeDir="false" afterPath="$PROJECT_DIR$/part3/neural_style_transfer_core.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +34,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="D:/untitled" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/main_file.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -83,8 +78,8 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="F:\Python3.6\miniImage\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />

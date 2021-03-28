@@ -17,5 +17,6 @@ def hsv_change_fun(instance,type,h):
 
             if image[i][j][type] < 0:
                 image[i][j][type] = 0
+
     instance.m_image=cv.cvtColor(image, cv.COLOR_HSV2RGB)
     instance.updata_image()
