@@ -1,2 +1,2 @@
 # mini_image
-mini_image_
+mini_image
