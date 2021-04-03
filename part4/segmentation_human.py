@@ -1,3 +1,4 @@
+'''
 import cv2
 import base64
 import numpy as np
@@ -29,3 +30,6 @@ def segmentation_human_function(instance):
     res_imgfile = imgfile.replace('.jpg', '_res.jpg')
     result = cv2.bitwise_and(ori_img, new_img)
     cv2.imwrite(res_imgfile, result)
+'''
+def segmentation_human_function(instance):
+    print(" ")
