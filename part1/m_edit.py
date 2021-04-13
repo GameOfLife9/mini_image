@@ -3,7 +3,8 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 import cv2 as cv
 import numpy as np
-from part1 import hsv_change,resize_widget,painter_widegt
+from part1 import hsv_change,resize_widget,painter_widegt,text_input_widegt
+from core import image_init_update
 def init_menue(instance):
     # 连接信号，当该信号被发射后执行括号内被连接函数
     instance.signal_edit_bar_1_hsv.connect(hsv_change.hsv_change_fun)
@@ -105,6 +106,15 @@ def init_menue(instance):
     painter_widegt_action.setObjectName("edit_widget_action")
     painter_widegt_action.triggered.connect(instance.widegt_painter_ts.show)
 
+    text_input_widegt.init_text_widget(instance)
+    text_widget_action = QAction('&添加文字', instance)
+    text_widget_action.triggered.connect(instance.widegt_text_input_ts.show)
+
+
+    pic_cut_action = QAction('&裁剪', instance)
+    pic_cut_action.setObjectName("pic_cut_action")
+    pic_cut_action.triggered.connect(instance.signal_part1_reat_emit_by_name)
+
     # 添加一个菜单：调整，这个菜单在后面被添加成图像选项的子选项
     # 为该选项添加一个action hsv_change_action
     change_menu = QMenu('调整', instance)
@@ -123,6 +133,9 @@ def init_menue(instance):
     editMenu.addAction(resize_action)
     editMenu.addAction(edit_widget_action)
     editMenu.addAction(painter_widegt_action)
+    editMenu.addAction(text_widget_action)
+    editMenu.addAction(pic_cut_action)
+
 
 
 def init_threhold_widget(instance):

@@ -117,3 +117,6 @@ def setBoolFalse(self):
     self.drawEllipse_able = False
     self.drawLeftRow_able = False
     self.drawErase_able = False
+
+    #for pic cut
+    self.pic_cut_bool=False

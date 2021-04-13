@@ -1,4 +1,4 @@
-from PyQt5.QtGui import QPainter,QPixmap,QPen,QBrush,QPolygon,QColor
+from PyQt5.QtGui import QPainter,QPixmap,QPen,QBrush,QPolygon,QColor, QFont
 from PyQt5.QtCore import Qt,QPoint
 def m_paint_evet(self,event):
 
@@ -12,8 +12,13 @@ def m_paint_evet(self,event):
     y_last = self.lastPoint.y() + 16
 
     if self.drawBreak:
+
         self.temp = self.pixmap.copy()
         pp = QPainter(self.temp)
+        if self.pic_cut_bool:
+            #print("asad")
+            pp.drawRect(x, y, w, h)
+            #return
         if self.button_use_pen_bool:
             pp.setPen(self.qpen)
         elif self.button_use_brush_bool:

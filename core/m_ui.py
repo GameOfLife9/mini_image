@@ -1,16 +1,18 @@
 import sys
 
 import cv2 as cv
-from PyQt5.QtGui import QImage,QPainter,QPixmap,QPen,QBrush,QPolygon
+from PyQt5.QtGui import QImage,QPainter,QPixmap,QPen,QBrush,QPolygon,QColor,QFont
 from PyQt5.QtWidgets import *
-from PyQt5.QtCore import pyqtSignal,Qt,QPoint,QPointF
+from PyQt5.QtCore import pyqtSignal,Qt,QPoint,QPointF,QRectF
 
 from core import image_init_update,m_init_file_menu
 
-from part1 import m_edit,file_function_define,signal_emit_by_name,resize_widget,painter_widegt,paint_event,dict_part1
+from part1 import m_edit,file_function_define,signal_emit_by_name,resize_widget,painter_widegt,paint_event,dict_part1,text_input_widegt
 from part2 import m_init_process,m_blur
 from part3 import m_init_style_transfer
 from part4 import m_init_part4_menubar
+
+from PIL import Image as Image_PIL
 
 class main_widget(QMainWindow):
 
@@ -46,12 +48,19 @@ class main_widget(QMainWindow):
         # 初始化图像
         self.init_imgae()
 
+        # 初始化文字输入
+        self.label_text_input = QTextEdit(self)
+        self.label_text_input.setGeometry(0, 0, 0, 0)
+
         # 文件菜单，编辑菜单，图像菜单，风格迁移菜单，part4菜单初始化
         self.file_menubar()
         self.edit_menubar()
         self.process_menubar()
         self.style_transfer_menubar()
         self.part4_menurbar()
+
+        #print(event.pos().x(), event.pos().y())
+        #self.label_temp.raise_()
 
         #self.part5_menubar()
         # 设置主窗口的属性
@@ -61,6 +70,10 @@ class main_widget(QMainWindow):
 
         # 显示窗口
         self.show()
+
+    #TODO:图片缩放部分待处理 https://blog.csdn.net/seniorwizard/article/details/111309598
+
+    #TODO:剪贴板部分 https://blog.csdn.net/seniorwizard
 
     # 图像初始化
     def init_imgae(self):
@@ -110,12 +123,23 @@ class main_widget(QMainWindow):
         signal_emit_by_name.signal_emit_name(self,self.sender().objectName())
     def signal_draw_emit_by_name(self):
         signal_emit_by_name.signal_draw_emit_name(self,self.sender().objectName())
+    def signal_part1_reat_emit_by_name(self):
+        signal_emit_by_name.signal_part1_reat_emit_by_name(self,self.sender().objectName())
     def paintEvent(self, event):
         paint_event.m_paint_evet(self,event)
 
     def mousePressEvent(self, event):
         if event.button() == Qt.LeftButton:
+            if self.drawing:
+                self.label_text_input.setGeometry(event.pos().x(),event.pos().y(), 108, 32)
+                self.drawing=False
+                self.setCursor(Qt.ArrowCursor)
+                self.drawToImage = True
             self.startPoint = event.pos()
+
+    def keyPressEvent(self,event):
+        if event.key()==16777249 and self.drawToImage:
+            text_input_widegt.enter_key_press_event(self,event)
 
 
     def mouseMoveEvent(self, event):
@@ -127,16 +151,22 @@ class main_widget(QMainWindow):
 
     def mouseReleaseEvent(self, event):
         self.endPoint = event.pos()
-        if self.drawBreak:
+        if self.pic_cut_bool:
+            #TODO：Qimage Erro
+            self.m_image=self.m_image[self.startPoint.y()+16:self.endPoint.y()+16,self.startPoint.x():self.endPoint.x(),:]
+            self.updata_image()
+        elif self.drawBreak:
             self.update()
             self.pixmap = self.temp.copy()
             self.m_image=image_init_update.qtpixmap_to_cvimg(self.pixmap)
             self.updata_image()
-        if self.drawConti:
+        elif self.drawConti:
             self.m_image = image_init_update.qtpixmap_to_cvimg(self.lbl.pixmap())
             self.updata_image()
 
         painter_widegt.setBoolFalse(self)
+    #part1-Ai face代码区域
+
 
     # part2 代码区域----------------------------------------------------------------------------
 

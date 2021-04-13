@@ -1,4 +1,4 @@
-from part1 import  m_edit,file_function_define,resize_widget,rotate_function,painter_widegt
+from part1 import  m_edit,file_function_define,resize_widget,rotate_function,painter_widegt,text_input_widegt
 def signal_emit_name(self,name):
 
     if name=="Resize_button":
@@ -55,3 +55,13 @@ def signal_draw_emit_name(self,name):
     elif name == "le_painter_pen_size":
         self.qpen.setWidth(int(self.le_painter_pen_size.text()))
 
+def signal_part1_reat_emit_by_name(self,name):
+    if name=="text_input_button":
+        text_input_widegt.text_line_edit_init(self)
+    elif name=="button_get_color_text_input":
+        text_input_widegt.change_input_color_action(self)
+    elif name == "button_get_font_text_input":
+        text_input_widegt.change_input_font_action(self)
+    elif name=="pic_cut_action":
+        self.pic_cut_bool=True
+        self.drawBreak=True
