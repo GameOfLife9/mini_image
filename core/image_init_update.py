@@ -24,11 +24,8 @@ def image_init(self):
 
 def image_update(self):
 
-
-
     self.m_QImage = QImage(self.m_image[:], self.m_image.shape[1], self.m_image.shape[0], self.m_image.shape[1] * 3,
                            QImage.Format_RGB888)
-    print("asasasa")
     self.m_image_width = 600
     self.m_image_height = self.m_image.shape[0] / self.m_image.shape[1] * self.m_image_width
 

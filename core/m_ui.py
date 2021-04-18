@@ -7,7 +7,7 @@ from PyQt5.QtCore import pyqtSignal,Qt,QPoint,QPointF,QRectF
 
 from core import image_init_update,m_init_file_menu
 
-from part1 import m_edit,file_function_define,signal_emit_by_name,resize_widget,painter_widegt,paint_event,dict_part1,text_input_widegt
+from part1 import m_edit,file_function_define,signal_emit_by_name,resize_widget,painter_widegt,paint_event,dict_part1,text_input_widegt,inti_face_ai
 from part2 import m_init_process,m_blur
 from part3 import m_init_style_transfer
 from part4 import m_init_part4_menubar
@@ -55,6 +55,8 @@ class main_widget(QMainWindow):
         # 文件菜单，编辑菜单，图像菜单，风格迁移菜单，part4菜单初始化
         self.file_menubar()
         self.edit_menubar()
+        self.init_face()
+
         self.process_menubar()
         self.style_transfer_menubar()
         self.part4_menurbar()
@@ -166,8 +168,12 @@ class main_widget(QMainWindow):
 
         painter_widegt.setBoolFalse(self)
     #part1-Ai face代码区域
-
-
+    def init_face(self):
+        inti_face_ai.menubar_add_face_ai(self)
+    def show_face_ai_show(self):
+        self.main_window_face_ai.show()
+        #print(self.win_face_ai.root_path)
+        self.win_face_ai._read_img(self.m_image)
     # part2 代码区域----------------------------------------------------------------------------
 
     # process menubar图像菜单初始化
